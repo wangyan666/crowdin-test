@@ -3,22 +3,14 @@ import './style.css'
 import App from './App.vue'
 import { createI18n } from 'vue-i18n'
 
+import en from './lang/en.json'
+import ja from './lang/ja.json'
+import zh from './lang/zh.json'
+
 const messages = {
-    en: {
-      message: {
-        '你好世界': 'hello world'
-      }
-    },
-    zh: {
-        message: {
-          '你好世界': '你好世界'
-        }
-    },
-    ja: {
-        message: {
-            '你好世界': 'こんにちは世界'
-        }
-    }
+    en,
+    zh,
+    ja
   }
 
 const i18n = createI18n({
